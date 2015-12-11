@@ -9,6 +9,7 @@ var session = require('express-session');// req.session
 var MongoStore = require('connect-mongo')(session);//是用来将connect的session持久化到mongodb中的
 var flash=require('connect-flash');//弹出提示
 
+var multer = require('multer');//用来处理http提交multipart/form-data，也就是文件上传
 
 var routes = require('./routes/index');
 var users = require('./routes/users');

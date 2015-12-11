@@ -16,7 +16,7 @@ mongoose.model('User',new mongoose.Schema({
 mongoose.model('Article',new mongoose.Schema({
     title:String,
     content:String,
-    poster:String,
+    avatar:String,
     user:{type:ObjectId,ref:'User'}//用户信息，对象ID类型，从User引用得到
 }))
 

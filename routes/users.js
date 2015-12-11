@@ -8,6 +8,7 @@ var middleware = require('../middleware');//确定登录与否 继续执行
 /*注册*/
 //middleware.checkNotLogin 检查登录与否 确定未登录才能访问此页面
 router.get('/reg', middleware.checkNotLogin,function(req, res, next) {
+    //
     res.render('user/reg',{});
 
     //if(req.session.user){//已经登陆过了
@@ -65,7 +66,7 @@ router.post('/login',middleware.checkNotLogin,function(req,res,next){
 router.get('/logout',middleware.checkLogin,function(req,res,next){
 
         req.session.user=null;
-        req.flash('success','退出成功，请重新登录');
+        req.flash('success','退出成功，请重新登录哦');
         res.redirect('/users/login')
 
 })

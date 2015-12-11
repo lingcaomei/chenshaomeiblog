@@ -1,8 +1,19 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  /*padding: 50px;*/
+  font: 14px "微软雅黑","Lucida Grande", Helvetica, Arial, sans-serif!important;
+
 }
 
 a {
   color: #00B7FF;
+}
+.form{
+  width: 660px;
+  margin: 50px auto;
+  padding: 100px;
+  background: #E4E4E4;
+  border-radius: 6px;
+}
+.formnone{
+  margin: 50px ;
 }
